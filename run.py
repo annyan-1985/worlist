@@ -1,7 +1,7 @@
 import codecs
-newfilename = "c:/learn-chinese/3000.txt"
-oldfilename = "c:/learn-chinese/know/already-write.txt"
-outfilename = "c:/learn-chinese/generate/xiezi.txt"
+newfilename = "c:/learn-chinese/worlist/3000.txt"
+oldfilename = "c:/learn-chinese/worlist/know/already-write.txt"
+outfilename = "c:/learn-chinese/worlist/generate/xiezi-2.txt"
 
 
 def isDuplicated(char) :
@@ -27,7 +27,7 @@ with codecs.open(newfilename, 'r', encoding='utf8') as f:
 
                 t.write(char)
                 count = count + 1
-                if count == 3:
+                if count == 2:
                     t.write('\n')
                     count = 0;
             char = f.read(1)
